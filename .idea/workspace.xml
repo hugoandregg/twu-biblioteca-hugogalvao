@@ -25,7 +25,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.WelcomeViewTest.welcomeMessageTest">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.twu.biblioteca" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WelcomeViewTest">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -35,6 +40,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WelcomeViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.view" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.view.WelcomeViewTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WelcomeViewTest.listBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.view" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.view.WelcomeViewTest" />
+      <option name="METHOD_NAME" value="listBooksTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -57,8 +93,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WelcomeViewTest.welcomeMessageTest" />
+        <item itemvalue="JUnit.WelcomeViewTest" />
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.WelcomeViewTest.listBooksTest" />
+        <item itemvalue="JUnit.WelcomeViewTest.welcomeMessageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -88,26 +126,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="453" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1579711945832">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="453" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1579711945832" />
     <state x="490" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579698939533">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="490" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.800@0.0.1280.800" timestamp="1579698939533" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1579701825700">
+    <state x="222" y="332" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579711910094">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1579701825700" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1579701825698">
+    <state x="222" y="332" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.800@0.0.1280.800" timestamp="1579711910094" />
+    <state x="414" y="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1579711914289">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1579701825698" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1579701825697">
+    <state x="414" y="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.800@0.0.1280.800" timestamp="1579711914289" />
+    <state width="1238" height="315" key="GridCell.Tab.0.bottom" timestamp="1579721552513">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1579701825697" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1579701825699">
+    <state width="1238" height="315" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1579721552513" />
+    <state width="1238" height="315" key="GridCell.Tab.0.center" timestamp="1579721552512">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1579701825699" />
+    <state width="1238" height="315" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1579721552512" />
+    <state width="1238" height="315" key="GridCell.Tab.0.left" timestamp="1579721552511">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="315" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1579721552511" />
+    <state width="1238" height="315" key="GridCell.Tab.0.right" timestamp="1579721552513">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="315" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1579721552512" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1579698904742">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
