@@ -2,21 +2,15 @@ package com.twu.biblioteca.view;
 
 import com.twu.biblioteca.constants.Messages;
 import com.twu.biblioteca.constants.Operation;
-import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.controller.BookController;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class WelcomeView {
 
     private Scanner in = new Scanner(System.in);
 
-    private List<Book> booksList = new ArrayList<Book>() {{
-        add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015));
-        add(new Book("The Last Wish: Introducing the Witcher", "Andrzej Sapkowski", 2008));
-        add(new Book("The Handmaid's tale", "Margaret Atwood", 1986));
-    }};
+    private BookController bookController = new BookController();
 
     public void run() {
         System.out.println(welcomeMessage());
@@ -31,30 +25,26 @@ public class WelcomeView {
             if (Operation.QUIT == operation) {
                 return;
             } else if (Operation.LIST_BOOKS == operation) {
-                System.out.println(listBooks());
+                System.out.println(bookController.listBooks());
+            } else if (Operation.CHECKOUT_BOOK == operation) {
+                System.out.println("What book do you want to checkout? ");
+                in.nextLine(); //if this line isn't here, the scanner will get a blank line
+                String title = in.nextLine();
+                System.out.println(bookController.checkoutBook(title));
             } else {
                 System.out.println(Messages.INVALID_OPTION_MESSAGE);
             }
         }
-
     }
 
     public String displayMenu() {
         String menu = "1 - List all books\n" +
+                "2 - Checkout a Book\n" +
                 "0 - Quit";
         return menu;
     }
 
     public String welcomeMessage() {
         return Messages.WELCOME_MESSAGE;
-    }
-
-    public String listBooks() {
-        StringBuilder booksListStr = new StringBuilder();
-        for (Book book : booksList) {
-            booksListStr.append(book.toString());
-            booksListStr.append(System.getProperty("line.separator"));
-        }
-        return booksListStr.toString();
     }
 }

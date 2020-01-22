@@ -16,16 +16,8 @@ public class WelcomeViewTest {
     }
 
     @Test
-    public void listBooksTest() {
-        String expected = "Harry Potter and the Sorcerer's stone | J.K. Rowling | 2015\n" +
-                "The Last Wish: Introducing the Witcher | Andrzej Sapkowski | 2008\n" +
-                "The Handmaid's tale | Margaret Atwood | 1986\n";
-        assertThat(welcomeView.listBooks(), is(expected));
-    }
-
-    @Test
     public void displayMenuTest() {
-        String expected = "1 - List all books\n0 - Quit";
+        String expected = "1 - List all books\n2 - Checkout a Book\n0 - Quit";
         assertThat(welcomeView.displayMenu(), is(expected));
     }
 }
