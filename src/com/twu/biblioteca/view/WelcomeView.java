@@ -1,12 +1,16 @@
 package com.twu.biblioteca.view;
 
+import com.twu.biblioteca.constants.Messages;
+import com.twu.biblioteca.constants.Operation;
 import com.twu.biblioteca.entity.Book;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class WelcomeView {
+
+    private Scanner in = new Scanner(System.in);
 
     private List<Book> booksList = new ArrayList<Book>() {{
         add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015));
@@ -16,11 +20,33 @@ public class WelcomeView {
 
     public void run() {
         System.out.println(welcomeMessage());
-        System.out.println(listBooks());
+        displayInteractiveMenu();
+    }
+
+    public void displayInteractiveMenu() {
+        while (true) {
+            System.out.println(displayMenu());
+            System.out.println(Messages.SELECT_OPERATION_MESSAGE);
+            int operation = in.nextInt();
+            if (Operation.QUIT == operation) {
+                return;
+            } else if (Operation.LIST_BOOKS == operation) {
+                System.out.println(listBooks());
+            } else {
+                System.out.println(Messages.INVALID_OPTION_MESSAGE);
+            }
+        }
+
+    }
+
+    public String displayMenu() {
+        String menu = "1 - List all books\n" +
+                "0 - Quit";
+        return menu;
     }
 
     public String welcomeMessage() {
-        return "Welcome to Biblioteca. Your one-stop-shop for great books titles in Bangalore!";
+        return Messages.WELCOME_MESSAGE;
     }
 
     public String listBooks() {

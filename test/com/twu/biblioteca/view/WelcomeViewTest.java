@@ -22,4 +22,10 @@ public class WelcomeViewTest {
                 "The Handmaid's tale | Margaret Atwood | 1986\n";
         assertThat(welcomeView.listBooks(), is(expected));
     }
+
+    @Test
+    public void displayMenuTest() {
+        String expected = "1 - List all books\n0 - Quit";
+        assertThat(welcomeView.displayMenu(), is(expected));
+    }
 }
