@@ -2,6 +2,8 @@ package com.twu.biblioteca.controller;
 
 import com.twu.biblioteca.constants.Messages;
 import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.exception.BookIsNotAvailableException;
+import com.twu.biblioteca.exception.NotValidBookToReturn;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +27,7 @@ public class BookController {
         if (removeBookIfItsAvailable(title)) {
             return Messages.CHECKOUT_AVAILABLE_BOOK_MESSAGE;
         }
-        return Messages.CHECKOUT_UNAVAILABLE_BOOK_MESSAGE;
+        throw new BookIsNotAvailableException(Messages.CHECKOUT_UNAVAILABLE_BOOK_MESSAGE);
     }
 
     public String returnBook(String title) {
@@ -33,7 +35,7 @@ public class BookController {
             returnBookToList(title);
             return Messages.RETURN_VALID_BOOK_MESSAGE;
         }
-        return Messages.RETURN_INVALID_BOOK_MESSAGE;
+        throw new NotValidBookToReturn(Messages.RETURN_INVALID_BOOK_MESSAGE);
     }
 
     private void returnBookToList(String title) {

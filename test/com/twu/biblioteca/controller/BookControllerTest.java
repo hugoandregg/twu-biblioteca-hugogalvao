@@ -1,6 +1,8 @@
 package com.twu.biblioteca.controller;
 
 import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.exception.BookIsNotAvailableException;
+import com.twu.biblioteca.exception.NotValidBookToReturn;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -37,18 +39,16 @@ public class BookControllerTest {
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS_WITHOUT_THE_WITCHER);
     }
 
-    @Test
+    @Test(expected = BookIsNotAvailableException.class)
     public void checkoutWrongTitleBook() {
-        String expected = "Sorry that book is not available";
-        assertThat(bookController.checkoutBook("Happy Potter and the Sorcerer's stone"), is(expected));
+        bookController.checkoutBook("Happy Potter and the Sorcerer's stone");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
-    @Test
+    @Test(expected = BookIsNotAvailableException.class)
     public void checkoutUnavailableBook() {
         checkoutAvailableBook();
-        String expected = "Sorry that book is not available";
-        assertThat(bookController.checkoutBook("The Last Wish: Introducing the Witcher"), is(expected));
+        bookController.checkoutBook("The Last Wish: Introducing the Witcher");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS_WITHOUT_THE_WITCHER);
     }
 
@@ -60,17 +60,15 @@ public class BookControllerTest {
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
-    @Test
+    @Test(expected = NotValidBookToReturn.class)
     public void returnABookAvailableOnLibrary() {
-        String expected = "That is not a valid book to return";
-        assertThat(bookController.returnBook("Harry Potter and the Sorcerer's stone"), is(expected));
+        bookController.returnBook("Harry Potter and the Sorcerer's stone");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
-    @Test
+    @Test(expected = NotValidBookToReturn.class)
     public void returnABookWithWrongTitle() {
-        String expected = "That is not a valid book to return";
-        assertThat(bookController.returnBook("Happy Potter and the Sorcerer's stone"), is(expected));
+        bookController.returnBook("Happy Potter and the Sorcerer's stone");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
