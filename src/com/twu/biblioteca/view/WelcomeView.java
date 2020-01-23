@@ -15,7 +15,7 @@ public class WelcomeView {
     private BookController bookController = new BookController();
 
     public void run() {
-        System.out.println(welcomeMessage());
+        System.out.println(Messages.WELCOME_MESSAGE);
         displayInteractiveMenu();
     }
 
@@ -71,9 +71,5 @@ public class WelcomeView {
                 "3 - Return a book\n" +
                 "0 - Quit";
         return menu;
-    }
-
-    public String welcomeMessage() {
-        return Messages.WELCOME_MESSAGE;
     }
 }
