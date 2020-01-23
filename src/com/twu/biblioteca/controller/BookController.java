@@ -17,13 +17,8 @@ public class BookController {
 
     private List<Book> originalBookList = new ArrayList<>(booksList);
 
-    public String listBooks() {
-        StringBuilder booksListStr = new StringBuilder();
-        for (Book book : booksList) {
-            booksListStr.append(book.toString());
-            booksListStr.append(System.getProperty("line.separator"));
-        }
-        return booksListStr.toString();
+    public List<Book> getBooksList() {
+        return booksList;
     }
 
     public String checkoutBook(String title) {

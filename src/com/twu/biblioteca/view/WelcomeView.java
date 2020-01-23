@@ -25,7 +25,7 @@ public class WelcomeView {
             if (Operation.QUIT == operation) {
                 return;
             } else if (Operation.LIST_BOOKS == operation) {
-                System.out.println(bookController.listBooks());
+                listBooks();
             } else if (Operation.CHECKOUT_BOOK == operation) {
                 System.out.println("What book do you want to checkout? ");
                 in.nextLine(); //if this line isn't here, the scanner will get a blank line
@@ -40,6 +40,10 @@ public class WelcomeView {
                 System.out.println(Messages.INVALID_OPTION_MESSAGE);
             }
         }
+    }
+
+    private void listBooks() {
+        bookController.getBooksList().forEach(System.out::println);
     }
 
     public String displayMenu() {
