@@ -31,7 +31,7 @@
       <recent name="com.twu.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookControllerTest">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -60,7 +60,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.listBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.checkoutUnavailableBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -70,23 +70,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.controller" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.controller.BookControllerTest" />
-      <option name="METHOD_NAME" value="listBooksTest" />
+      <option name="METHOD_NAME" value="checkoutUnavailableBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WelcomeViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.checkoutWrongTitleBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.view.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.view" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.view.WelcomeViewTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.controller.BookControllerTest" />
+      <option name="METHOD_NAME" value="checkoutWrongTitleBook" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.WelcomeViewTest" />
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.BookControllerTest.listBooksTest" />
+        <item itemvalue="JUnit.BookControllerTest" />
+        <item itemvalue="JUnit.BookControllerTest.checkoutWrongTitleBook" />
         <item itemvalue="JUnit.WelcomeViewTest.displayMenuTest" />
+        <item itemvalue="JUnit.BookControllerTest.checkoutUnavailableBook" />
       </list>
     </recent_temporary>
   </component>
@@ -159,22 +160,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.800@0.0.1280.800" timestamp="1579711914289" />
-    <state width="1238" height="195" key="GridCell.Tab.0.bottom" timestamp="1579729842925">
+    <state width="1238" height="195" key="GridCell.Tab.0.bottom" timestamp="1579796697402">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="195" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1579729842925" />
-    <state width="1238" height="195" key="GridCell.Tab.0.center" timestamp="1579729842923">
+    <state width="1238" height="195" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1579796697402" />
+    <state width="1238" height="195" key="GridCell.Tab.0.center" timestamp="1579796697401">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="195" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1579729842923" />
-    <state width="1238" height="195" key="GridCell.Tab.0.left" timestamp="1579729842922">
+    <state width="1238" height="195" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1579796697401" />
+    <state width="1238" height="195" key="GridCell.Tab.0.left" timestamp="1579796697400">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="195" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1579729842922" />
-    <state width="1238" height="195" key="GridCell.Tab.0.right" timestamp="1579729842924">
+    <state width="1238" height="195" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1579796697400" />
+    <state width="1238" height="195" key="GridCell.Tab.0.right" timestamp="1579796697401">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="195" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1579729842924" />
+    <state width="1238" height="195" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1579796697401" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1579729587181">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -195,19 +196,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1579698904742" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/twu/biblioteca/controller/BookController.java</url>
-          <line>25</line>
-          <properties class="com.twu.biblioteca.controller.BookController" method="checkoutBook">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1579785633562">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1579785633562" />
   </component>
 </project>

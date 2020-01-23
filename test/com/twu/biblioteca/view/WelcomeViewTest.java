@@ -17,7 +17,7 @@ public class WelcomeViewTest {
 
     @Test
     public void displayMenuTest() {
-        String expected = "1 - List all books\n2 - Checkout a Book\n0 - Quit";
+        String expected = "1 - List all books\n2 - Checkout a book\n3 - Return a book\n0 - Quit";
         assertThat(welcomeView.displayMenu(), is(expected));
     }
 }

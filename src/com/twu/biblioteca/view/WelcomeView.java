@@ -31,6 +31,11 @@ public class WelcomeView {
                 in.nextLine(); //if this line isn't here, the scanner will get a blank line
                 String title = in.nextLine();
                 System.out.println(bookController.checkoutBook(title));
+            } else if (Operation.RETURN_BOOK == operation) {
+                System.out.println("What book do you want to return? ");
+                in.nextLine(); //if this line isn't here, the scanner will get a blank line
+                String title = in.nextLine();
+                System.out.println(bookController.returnBook(title));
             } else {
                 System.out.println(Messages.INVALID_OPTION_MESSAGE);
             }
@@ -39,7 +44,8 @@ public class WelcomeView {
 
     public String displayMenu() {
         String menu = "1 - List all books\n" +
-                "2 - Checkout a Book\n" +
+                "2 - Checkout a book\n" +
+                "3 - Return a book\n" +
                 "0 - Quit";
         return menu;
     }
