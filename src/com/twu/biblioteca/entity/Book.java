@@ -10,34 +10,25 @@ public class Book {
 
     private int year;
 
-    public Book(String title, String author, int year) {
+    private boolean checkedOut;
+
+    public Book(String title, String author, int year, boolean checkedOut) {
         this.title = title;
         this.author = author;
         this.year = year;
+        this.checkedOut = checkedOut;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public boolean isCheckedOut() {
+        return checkedOut;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
+    public void setCheckedOut(boolean checkedOut) {
+        this.checkedOut = checkedOut;
     }
 
     @Override

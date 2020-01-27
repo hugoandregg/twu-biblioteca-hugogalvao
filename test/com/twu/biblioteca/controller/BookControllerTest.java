@@ -17,14 +17,14 @@ public class BookControllerTest {
     private BookController bookController;
 
     private final List<Book> LIST_OF_BOOKS = new ArrayList<Book>() {{
-        add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015));
-        add(new Book("The Last Wish: Introducing the Witcher", "Andrzej Sapkowski", 2008));
-        add(new Book("The Handmaid's tale", "Margaret Atwood", 1986));
+        add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015, false));
+        add(new Book("The Last Wish: Introducing the Witcher", "Andrzej Sapkowski", 2008, false));
+        add(new Book("The Handmaid's tale", "Margaret Atwood", 1986, false));
     }};
 
     private final List<Book> LIST_OF_BOOKS_WITHOUT_THE_WITCHER = new ArrayList<Book>() {{
-        add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015));
-        add(new Book("The Handmaid's tale", "Margaret Atwood", 1986));
+        add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015, false));
+        add(new Book("The Handmaid's tale", "Margaret Atwood", 1986, false));
     }};
 
     @Before
@@ -35,20 +35,20 @@ public class BookControllerTest {
     @Test
     public void checkoutAvailableBook(){
         String expected = "Thank you! Enjoy the book";
-        assertThat(bookController.checkoutBook("The Last Wish: Introducing the Witcher"), is(expected));
+        assertThat(bookController.checkoutBookFromLibrary("The Last Wish: Introducing the Witcher"), is(expected));
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS_WITHOUT_THE_WITCHER);
     }
 
     @Test(expected = BookIsNotAvailableException.class)
     public void checkoutWrongTitleBook() {
-        bookController.checkoutBook("Happy Potter and the Sorcerer's stone");
+        bookController.checkoutBookFromLibrary("Happy Potter and the Sorcerer's stone");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
     @Test(expected = BookIsNotAvailableException.class)
     public void checkoutUnavailableBook() {
         checkoutAvailableBook();
-        bookController.checkoutBook("The Last Wish: Introducing the Witcher");
+        bookController.checkoutBookFromLibrary("The Last Wish: Introducing the Witcher");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS_WITHOUT_THE_WITCHER);
     }
 
@@ -56,19 +56,19 @@ public class BookControllerTest {
     public void returnABookFromLibrary() {
         checkoutAvailableBook();
         String expected = "Thank you for returning the book";
-        assertThat(bookController.returnBook("The Last Wish: Introducing the Witcher"), is(expected));
+        assertThat(bookController.returnBookToLibrary("The Last Wish: Introducing the Witcher"), is(expected));
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
     @Test(expected = NotValidBookToReturn.class)
     public void returnABookAvailableOnLibrary() {
-        bookController.returnBook("Harry Potter and the Sorcerer's stone");
+        bookController.returnBookToLibrary("Harry Potter and the Sorcerer's stone");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 
     @Test(expected = NotValidBookToReturn.class)
     public void returnABookWithWrongTitle() {
-        bookController.returnBook("Happy Potter and the Sorcerer's stone");
+        bookController.returnBookToLibrary("Happy Potter and the Sorcerer's stone");
         assertBookListIsTheSame(bookController.getBooksList(), LIST_OF_BOOKS);
     }
 

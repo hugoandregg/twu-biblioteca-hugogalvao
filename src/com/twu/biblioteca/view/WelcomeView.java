@@ -43,7 +43,7 @@ public class WelcomeView {
             System.out.println("What book do you want to return? ");
             in.nextLine(); //if this line isn't here, the scanner will get a blank line
             String title = in.nextLine();
-            System.out.println(bookController.returnBook(title));
+            System.out.println(bookController.returnBookToLibrary(title));
         } catch (NotValidBookToReturn e) {
             System.out.println(e.getMessage());
         }
@@ -54,7 +54,7 @@ public class WelcomeView {
             System.out.println("What book do you want to checkout? ");
             in.nextLine(); //if this line isn't here, the scanner will get a blank line
             String title = in.nextLine();
-            System.out.println(bookController.checkoutBook(title));
+            System.out.println(bookController.checkoutBookFromLibrary(title));
         } catch (BookIsNotAvailableException e) {
             System.out.println(e.getMessage());
         }

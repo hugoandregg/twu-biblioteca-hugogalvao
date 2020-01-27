@@ -93,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.returnABookFromLibrary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.returnABookWithWrongTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +103,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.controller" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.controller.BookControllerTest" />
-      <option name="METHOD_NAME" value="returnABookFromLibrary" />
+      <option name="METHOD_NAME" value="returnABookWithWrongTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,9 +113,9 @@
       <list>
         <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.BookControllerTest.returnABookWithWrongTitle" />
         <item itemvalue="JUnit.BookControllerTest.checkoutUnavailableBook" />
         <item itemvalue="JUnit.BookControllerTest.checkoutWrongTitleBook" />
-        <item itemvalue="JUnit.BookControllerTest.returnABookFromLibrary" />
       </list>
     </recent_temporary>
   </component>
@@ -161,38 +161,38 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.800@0.0.1280.800" timestamp="1579711914289" />
-    <state width="1238" height="235" key="GridCell.Tab.0.bottom" timestamp="1579800991874">
+    <state width="1238" height="235" key="GridCell.Tab.0.bottom" timestamp="1580159995488">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="235" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1579800991874" />
-    <state width="1238" height="235" key="GridCell.Tab.0.center" timestamp="1579800991873">
+    <state width="1238" height="235" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580159995488" />
+    <state width="1238" height="235" key="GridCell.Tab.0.center" timestamp="1580159995487">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="235" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1579800991873" />
-    <state width="1238" height="235" key="GridCell.Tab.0.left" timestamp="1579800991872">
+    <state width="1238" height="235" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580159995487" />
+    <state width="1238" height="235" key="GridCell.Tab.0.left" timestamp="1580159995486">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="235" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1579800991872" />
-    <state width="1238" height="235" key="GridCell.Tab.0.right" timestamp="1579800991873">
+    <state width="1238" height="235" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580159995486" />
+    <state width="1238" height="235" key="GridCell.Tab.0.right" timestamp="1580159995487">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="235" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1579800991873" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1579798863228">
+    <state width="1238" height="235" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580159995487" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1580158142268">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1579798863228" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1579798863227">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580158142268" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1580158142265">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1579798863227" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1579798863226">
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1580158142265" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1580158142264">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1579798863226" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1579798863227">
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1580158142264" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1580158142266">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1579798863227" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1580158142266" />
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1579698904742">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -201,6 +201,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1579800737221" />
+    <state x="402" y="13" key="refactoring.ChangeSignatureDialog" timestamp="1580155739869">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="402" y="13" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1580155739869" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1579785633562">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
