@@ -3,6 +3,7 @@ package com.twu.biblioteca.controller;
 import com.twu.biblioteca.constants.Messages;
 import com.twu.biblioteca.entity.Book;
 import com.twu.biblioteca.entity.Library;
+import com.twu.biblioteca.entity.Product;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.NotValidBookToReturn;
 import com.twu.biblioteca.repository.BookRepository;
@@ -10,12 +11,12 @@ import com.twu.biblioteca.repository.BookRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BookController {
+public class LibraryController {
 
     private Library library = new Library(BookRepository.getBooks());
 
-    public List<Book> getBooksList() {
-        return library.getBookList()
+    public List<Product> getBooksList() {
+        return library.getProductList()
                 .stream()
                 .filter(book -> !book.isCheckedOut())
                 .collect(Collectors.toList());
