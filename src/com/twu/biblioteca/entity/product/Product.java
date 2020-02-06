@@ -1,4 +1,6 @@
-package com.twu.biblioteca.entity;
+package com.twu.biblioteca.entity.product;
+
+import com.twu.biblioteca.entity.user.Costumer;
 
 import java.util.Objects;
 

@@ -4,8 +4,8 @@ import com.twu.biblioteca.constants.Messages;
 import com.twu.biblioteca.constants.Operation;
 import com.twu.biblioteca.controller.LibraryController;
 import com.twu.biblioteca.controller.MovieRentalStoreController;
-import com.twu.biblioteca.entity.Product;
-import com.twu.biblioteca.entity.User;
+import com.twu.biblioteca.entity.product.Product;
+import com.twu.biblioteca.entity.user.User;
 
 import java.util.List;
 import java.util.Scanner;

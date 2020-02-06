@@ -1,12 +1,14 @@
-package com.twu.biblioteca.entity;
+package com.twu.biblioteca.service;
+
+import com.twu.biblioteca.entity.product.Product;
 
 import java.util.List;
 
-public abstract class Store {
+public abstract class StoreService {
 
     protected List<Product> productList;
 
-    public Store(List<Product> productList) {
+    public StoreService(List<Product> productList) {
         this.productList = productList;
     }
 

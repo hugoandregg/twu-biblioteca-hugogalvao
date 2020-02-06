@@ -1,9 +1,12 @@
-package com.twu.biblioteca.entity;
+package com.twu.biblioteca.service;
+
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.product.Product;
 
 import java.util.List;
 
-public class MovieRentalStore extends Store {
-    public MovieRentalStore(List<Product> productList) {
+public class MovieRentalStoreService extends StoreService {
+    public MovieRentalStoreService(List<Product> productList) {
         super(productList);
     }
 

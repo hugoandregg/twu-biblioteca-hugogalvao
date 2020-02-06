@@ -5,9 +5,9 @@ import com.twu.biblioteca.constants.Operation;
 import com.twu.biblioteca.controller.LibraryController;
 import com.twu.biblioteca.controller.MovieRentalStoreController;
 import com.twu.biblioteca.controller.UserController;
-import com.twu.biblioteca.entity.Costumer;
-import com.twu.biblioteca.entity.Librarian;
-import com.twu.biblioteca.entity.User;
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.user.Librarian;
+import com.twu.biblioteca.entity.user.User;
 import com.twu.biblioteca.exception.*;
 
 import java.util.Scanner;

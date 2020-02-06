@@ -1,7 +1,7 @@
 package com.twu.biblioteca.repository;
 
-import com.twu.biblioteca.entity.Book;
-import com.twu.biblioteca.entity.Product;
+import com.twu.biblioteca.entity.product.Book;
+import com.twu.biblioteca.entity.product.Product;
 
 import java.util.Arrays;
 import java.util.List;

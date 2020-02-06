@@ -1,4 +1,4 @@
-package com.twu.biblioteca.entity;
+package com.twu.biblioteca.entity.product;
 
 public class Book extends Product {
 

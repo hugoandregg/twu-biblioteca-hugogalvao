@@ -1,8 +1,8 @@
 package com.twu.biblioteca.repository;
 
-import com.twu.biblioteca.entity.Movie;
-import com.twu.biblioteca.entity.Product;
-import com.twu.biblioteca.entity.RatingEnum;
+import com.twu.biblioteca.entity.product.Movie;
+import com.twu.biblioteca.entity.product.Product;
+import com.twu.biblioteca.entity.product.RatingEnum;
 
 import java.util.Arrays;
 import java.util.List;

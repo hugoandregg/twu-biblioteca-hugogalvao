@@ -1,8 +1,7 @@
 package com.twu.biblioteca.controller;
 
-import com.twu.biblioteca.entity.Costumer;
-import com.twu.biblioteca.entity.Librarian;
-import com.twu.biblioteca.entity.User;
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.user.Librarian;
 import com.twu.biblioteca.exception.InvalidLibraryNumber;
 import com.twu.biblioteca.exception.InvalidPassword;
 import com.twu.biblioteca.repository.UserRepository;

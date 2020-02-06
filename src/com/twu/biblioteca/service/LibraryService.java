@@ -1,10 +1,13 @@
-package com.twu.biblioteca.entity;
+package com.twu.biblioteca.service;
+
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.product.Product;
 
 import java.util.List;
 
-public class Library extends Store {
+public class LibraryService extends StoreService {
 
-    public Library(List<Product> bookList) {
+    public LibraryService(List<Product> bookList) {
         super(bookList);
     }
 

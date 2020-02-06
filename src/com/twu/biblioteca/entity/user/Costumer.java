@@ -1,4 +1,4 @@
-package com.twu.biblioteca.entity;
+package com.twu.biblioteca.entity.user;
 
 public class Costumer extends User {
 

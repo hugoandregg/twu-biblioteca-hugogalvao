@@ -2,29 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db04a48e-939b-4a75-ba3f-5ecb89dd3ce3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Costumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/InvalidLibraryNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/InvalidPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/CustomerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/LibrarianView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/constants/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/constants/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/constants/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/constants/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/LibraryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/MovieRentalStoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/MovieRentalStoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/MovieRentalStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/MovieRentalStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/user/Costumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/user/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/MovieRentalStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/service/MovieRentalStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/RatingEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/RatingEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/service/StoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/view/LibrarianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/LibrarianView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/view/WelcomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/WelcomeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/LibraryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/LibraryControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/MovieRentalStoreControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/MovieRentalStoreControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579698900357</updated>
-      <workItem from="1580490474917" duration="28536000" />
+      <workItem from="1580490474917" duration="29278000" />
     </task>
     <servers />
   </component>
@@ -197,34 +197,38 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="414" y="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.800@0.0.1280.800" timestamp="1579711914289" />
-    <state x="462" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580492507173">
+    <state x="462" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580999312541">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="462" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580492507173" />
-    <state x="425" y="162" key="CommitChangelistDialog2" timestamp="1580493712893">
+    <state x="462" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580999312541" />
+    <state x="80" y="20" width="1574" height="1019" key="CommitChangelistDialog2" timestamp="1580999673167">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="425" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1580493712893" />
-    <state width="1750" height="398" key="GridCell.Tab.0.bottom" timestamp="1580999006032">
+    <state x="80" y="20" width="1574" height="1019" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1580999673167" />
+    <state x="150" y="70" key="DiffContextDialog" timestamp="1580999663643">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="150" y="70" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580999663643" />
+    <state width="1750" height="398" key="GridCell.Tab.0.bottom" timestamp="1580999699690">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580161592527" />
-    <state width="1750" height="398" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1580999006032" />
-    <state width="1750" height="398" key="GridCell.Tab.0.center" timestamp="1580999006031">
+    <state width="1750" height="398" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699690" />
+    <state width="1750" height="398" key="GridCell.Tab.0.center" timestamp="1580999699689">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580161592525" />
-    <state width="1750" height="398" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1580999006031" />
-    <state width="1750" height="398" key="GridCell.Tab.0.left" timestamp="1580999006031">
+    <state width="1750" height="398" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699689" />
+    <state width="1750" height="398" key="GridCell.Tab.0.left" timestamp="1580999699689">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580161592525" />
-    <state width="1750" height="398" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1580999006031" />
-    <state width="1750" height="398" key="GridCell.Tab.0.right" timestamp="1580999006032">
+    <state width="1750" height="398" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699689" />
+    <state width="1750" height="398" key="GridCell.Tab.0.right" timestamp="1580999699690">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580161592526" />
-    <state width="1750" height="398" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1580999006032" />
+    <state width="1750" height="398" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699690" />
     <state width="1750" height="391" key="GridCell.Tab.1.bottom" timestamp="1580822253139">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

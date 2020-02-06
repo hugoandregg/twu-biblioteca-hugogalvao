@@ -1,8 +1,8 @@
 package com.twu.biblioteca.repository;
 
-import com.twu.biblioteca.entity.Costumer;
-import com.twu.biblioteca.entity.Librarian;
-import com.twu.biblioteca.entity.User;
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.user.Librarian;
+import com.twu.biblioteca.entity.user.User;
 
 import java.util.Arrays;
 import java.util.List;

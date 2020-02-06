@@ -1,8 +1,8 @@
 package com.twu.biblioteca.controller;
 
-import com.twu.biblioteca.entity.Book;
-import com.twu.biblioteca.entity.Costumer;
-import com.twu.biblioteca.entity.Product;
+import com.twu.biblioteca.entity.product.Book;
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.product.Product;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.NotValidBookToReturn;
 import com.twu.biblioteca.repository.UserRepository;

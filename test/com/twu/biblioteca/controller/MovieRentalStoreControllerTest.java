@@ -1,9 +1,9 @@
 package com.twu.biblioteca.controller;
 
-import com.twu.biblioteca.entity.Costumer;
-import com.twu.biblioteca.entity.Movie;
-import com.twu.biblioteca.entity.Product;
-import com.twu.biblioteca.entity.RatingEnum;
+import com.twu.biblioteca.entity.user.Costumer;
+import com.twu.biblioteca.entity.product.Movie;
+import com.twu.biblioteca.entity.product.Product;
+import com.twu.biblioteca.entity.product.RatingEnum;
 import com.twu.biblioteca.exception.MovieIsNotAvailableException;
 import com.twu.biblioteca.repository.UserRepository;
 import org.junit.Before;
