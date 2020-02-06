@@ -13,4 +13,11 @@ public abstract class Store {
     public List<Product> getProductList() {
         return productList;
     }
+
+    public Product getProductByTitle(String title) {
+        return productList.stream()
+                .filter(book -> book.getTitle().equalsIgnoreCase(title))
+                .findFirst()
+                .get();
+    }
 }

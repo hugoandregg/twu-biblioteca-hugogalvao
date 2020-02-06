@@ -1,7 +1,5 @@
 package com.twu.biblioteca.entity;
 
-import java.util.Objects;
-
 public class Book extends Product {
 
     public Book(String title, String creator, int year, boolean checkedOut) {

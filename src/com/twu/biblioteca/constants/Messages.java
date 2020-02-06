@@ -12,4 +12,9 @@ public class Messages {
 
     public static final String CHECKOUT_AVAILABLE_MOVIE_MESSAGE = "Thank you! Enjoy the movie";
     public static final String CHECKOUT_UNAVAILABLE_MOVIE_MESSAGE = "Sorry that movie is not available";
+
+    public static final String INVALID_LIBRARY_NUMBER_MESSAGE = "Sorry, your library number doesn't exist";
+    public static final String INVALID_PASSWORD_MESSAGE = "Sorry, your password is incorrect";
+
+    public static final String EMPTY_PRODUCT_LIST = "Sorry, no one checked out this product";
 }

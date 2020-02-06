@@ -11,10 +11,13 @@ public class MovieRentalStore extends Store {
         return productList.stream().anyMatch(movie -> movie.getTitle().equalsIgnoreCase(title) && !movie.isCheckedOut());
     }
 
-    public void checkoutMovie(String title) {
+    public void checkoutMovie(String title, Costumer costumer) {
         productList.stream()
                 .filter(movie -> movie.getTitle().equalsIgnoreCase(title))
                 .findFirst()
-                .ifPresent(movie -> movie.setCheckedOut(true));
+                .ifPresent(movie -> {
+                    movie.setCheckedOut(true);
+                    movie.setCheckedOutCostumer(costumer);
+                });
     }
 }

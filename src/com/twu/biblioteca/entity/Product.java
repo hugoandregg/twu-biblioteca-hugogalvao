@@ -12,11 +12,14 @@ public abstract class Product {
 
     protected boolean checkedOut;
 
+    protected Costumer checkedOutCostumer;
+
     public Product(String title, int year, String creator, boolean checkedOut) {
         this.title = title;
         this.year = year;
         this.creator = creator;
         this.checkedOut = checkedOut;
+        this.checkedOutCostumer = null;
     }
 
     public String getTitle() {
@@ -29,6 +32,14 @@ public abstract class Product {
 
     public void setCheckedOut(boolean checkedOut) {
         this.checkedOut = checkedOut;
+    }
+
+    public void setCheckedOutCostumer(Costumer checkedOutCostumer) {
+        this.checkedOutCostumer = checkedOutCostumer;
+    }
+
+    public Costumer getCheckedOutCostumer() {
+        return checkedOutCostumer;
     }
 
     @Override

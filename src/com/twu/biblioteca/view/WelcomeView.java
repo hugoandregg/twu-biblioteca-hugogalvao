@@ -4,9 +4,11 @@ import com.twu.biblioteca.constants.Messages;
 import com.twu.biblioteca.constants.Operation;
 import com.twu.biblioteca.controller.LibraryController;
 import com.twu.biblioteca.controller.MovieRentalStoreController;
-import com.twu.biblioteca.exception.BookIsNotAvailableException;
-import com.twu.biblioteca.exception.MovieIsNotAvailableException;
-import com.twu.biblioteca.exception.NotValidBookToReturn;
+import com.twu.biblioteca.controller.UserController;
+import com.twu.biblioteca.entity.Costumer;
+import com.twu.biblioteca.entity.Librarian;
+import com.twu.biblioteca.entity.User;
+import com.twu.biblioteca.exception.*;
 
 import java.util.Scanner;
 
@@ -17,6 +19,12 @@ public class WelcomeView {
     private LibraryController libraryController = new LibraryController();
 
     private MovieRentalStoreController movieRentalStoreController = new MovieRentalStoreController();
+
+    private UserController userController = new UserController();
+
+    private CustomerView customerView = new CustomerView(libraryController, movieRentalStoreController);
+
+    private LibrarianView librarianView = new LibrarianView(libraryController, movieRentalStoreController);
 
     public void run() {
         System.out.println(Messages.WELCOME_MESSAGE);
@@ -32,68 +40,59 @@ public class WelcomeView {
                 return;
             } else if (Operation.LIST_BOOKS == operation) {
                 listBooks();
-            } else if (Operation.CHECKOUT_BOOK == operation) {
-                checkoutBook();
-            } else if (Operation.RETURN_BOOK == operation) {
-                returnBook();
             } else if (Operation.LIST_MOVIES == operation) {
                 listMovies();
-            } else if (Operation.CHECKOUT_MOVIE == operation) {
-                checkoutMovie();
+            } else if (Operation.LOGIN == operation) {
+                getCredentials();
             } else {
                 System.out.println(Messages.INVALID_OPTION_MESSAGE);
             }
         }
     }
 
-    private void returnBook() {
+    public String displayMenu() {
+        String menu = "1 - List available books\n" +
+                "2 - List available movies\n" +
+                "3 - Login\n" +
+                "0 - Quit";
+        return menu;
+    }
+
+    private void getCredentials() {
+        System.out.println("Library Number:");
+        in.nextLine();
+        String libraryNumber = in.nextLine();
+        System.out.println("Password:");
+        String password = in.nextLine();
+        login(libraryNumber, password);
+    }
+
+    private void login(String libraryNumber, String password) {
+        User user = null;
         try {
-            System.out.println("What book do you want to return? ");
-            in.nextLine(); //if this line isn't here, the scanner will get a blank line
-            String title = in.nextLine();
-            System.out.println(libraryController.returnBookToLibrary(title));
-        } catch (NotValidBookToReturn e) {
+            user = userController.login(libraryNumber, password);
+        } catch (InvalidLibraryNumber | InvalidPassword e) {
             System.out.println(e.getMessage());
+        }
+        redirect(user);
+    }
+
+    private void redirect(User user) {
+        if (user instanceof Costumer) {
+            customerView.displayInteractiveMenu(user);
+        } else if (user instanceof Librarian) {
+            librarianView.displayInteractiveMenu(user);
+        } else {
+            System.out.println("Try Again!");
+            getCredentials();
         }
     }
 
-    private void checkoutBook() {
-        try {
-            System.out.println("What book do you want to checkout? ");
-            in.nextLine(); //if this line isn't here, the scanner will get a blank line
-            String title = in.nextLine();
-            System.out.println(libraryController.checkoutBookFromLibrary(title));
-        } catch (BookIsNotAvailableException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    private void listBooks() {
+    public void listBooks() {
         libraryController.getBooksList().forEach(System.out::println);
     }
 
-    private void listMovies() {
+    public void listMovies() {
         movieRentalStoreController.getMoviesList().forEach(System.out::println);
-    }
-
-    private void checkoutMovie() {
-        try {
-            System.out.println("What movie do you want to checkout? ");
-            in.nextLine(); //if this line isn't here, the scanner will get a blank line
-            String title = in.nextLine();
-            System.out.println(movieRentalStoreController.checkoutMovieFromRentalStore(title));
-        } catch (MovieIsNotAvailableException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    public String displayMenu() {
-        String menu = "1 - List all books\n" +
-                "2 - Checkout a book\n" +
-                "3 - Return a book\n" +
-                "4 - List all movies\n" +
-                "5 - Checkout a movie\n" +
-                "0 - Quit";
-        return menu;
     }
 }
