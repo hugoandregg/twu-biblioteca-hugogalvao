@@ -6,14 +6,17 @@ import com.twu.biblioteca.entity.product.Movie;
 import com.twu.biblioteca.service.MovieRentalStoreService;
 import com.twu.biblioteca.entity.product.Product;
 import com.twu.biblioteca.exception.MovieIsNotAvailableException;
-import com.twu.biblioteca.repository.MovieRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class MovieRentalStoreController {
 
-    private MovieRentalStoreService movieRentalStoreService = new MovieRentalStoreService(MovieRepository.getMovies());
+    private MovieRentalStoreService movieRentalStoreService;
+
+    public MovieRentalStoreController(MovieRentalStoreService movieRentalStoreService) {
+        this.movieRentalStoreService = movieRentalStoreService;
+    }
 
     public List<Product> getMoviesList() {
         return movieRentalStoreService.getProductList()

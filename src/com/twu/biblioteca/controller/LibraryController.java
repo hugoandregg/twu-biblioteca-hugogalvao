@@ -14,7 +14,11 @@ import java.util.stream.Collectors;
 
 public class LibraryController {
 
-    private LibraryService libraryService = new LibraryService(BookRepository.getBooks());
+    private LibraryService libraryService;
+
+    public LibraryController(LibraryService libraryService) {
+        this.libraryService = libraryService;
+    }
 
     public List<Product> getBooksList() {
         return libraryService.getProductList()

@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db04a48e-939b-4a75-ba3f-5ecb89dd3ce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/exception/CancelOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/MenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/CheckedOutBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/CheckedOutMovies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/CheckoutBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/CheckoutMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/ListBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/ListMovies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/MyInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/Quit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/view/operation/ReturnBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/constants/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/constants/Operations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/LibraryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/MovieRentalStoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/MovieRentalStoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/user/Costumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/user/Librarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/service/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/MovieRentalStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/service/MovieRentalStoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/RatingEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/product/RatingEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/service/StoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/entity/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/MovieRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/repository/UserRepository.java" afterDir="false" />
@@ -35,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -55,13 +60,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.twu.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -138,10 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.MovieRentalStoreControllerTest" />
         <item itemvalue="JUnit.LibraryControllerTest" />
-        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.UserControllerTest.loginWithCostumer" />
       </list>
     </recent_temporary>
@@ -168,7 +174,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579698900357</updated>
-      <workItem from="1580490474917" duration="29278000" />
+      <workItem from="1580490474917" duration="33171000" />
+      <workItem from="1581369305398" duration="369000" />
+      <workItem from="1581370428384" duration="9550000" />
     </task>
     <servers />
   </component>
@@ -176,15 +184,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580492959656">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581433193572">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580492959656" />
-    <state x="634" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1580998358094">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1581433193572" />
+    <state x="634" y="127" width="374" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1581431667989">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="453" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1580160800728" />
-    <state x="634" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1580998358094" />
+    <state x="634" y="127" width="374" height="634" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1581431667989" />
     <state x="490" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579698939533">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -201,68 +209,73 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="462" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580999312541" />
-    <state x="80" y="20" width="1574" height="1019" key="CommitChangelistDialog2" timestamp="1580999673167">
+    <state x="80" y="20" width="1574" height="1019" key="CommitChangelistDialog2" timestamp="1581441171459">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="80" y="20" width="1574" height="1019" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1580999673167" />
+    <state x="80" y="20" width="1574" height="1019" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1581441171459" />
     <state x="150" y="70" key="DiffContextDialog" timestamp="1580999663643">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="150" y="70" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580999663643" />
-    <state width="1750" height="398" key="GridCell.Tab.0.bottom" timestamp="1580999699690">
+    <state width="1750" height="328" key="GridCell.Tab.0.bottom" timestamp="1581440621206">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580161592527" />
-    <state width="1750" height="398" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699690" />
-    <state width="1750" height="398" key="GridCell.Tab.0.center" timestamp="1580999699689">
+    <state width="1750" height="328" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581440621206" />
+    <state width="1750" height="328" key="GridCell.Tab.0.center" timestamp="1581440621205">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1580161592525" />
-    <state width="1750" height="398" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699689" />
-    <state width="1750" height="398" key="GridCell.Tab.0.left" timestamp="1580999699689">
+    <state width="1750" height="328" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581440621205" />
+    <state width="1750" height="328" key="GridCell.Tab.0.left" timestamp="1581440621204">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1580161592525" />
-    <state width="1750" height="398" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699689" />
-    <state width="1750" height="398" key="GridCell.Tab.0.right" timestamp="1580999699690">
+    <state width="1750" height="328" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581440621204" />
+    <state width="1750" height="328" key="GridCell.Tab.0.right" timestamp="1581440621206">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="235" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1580161592526" />
-    <state width="1750" height="398" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1580999699690" />
-    <state width="1750" height="391" key="GridCell.Tab.1.bottom" timestamp="1580822253139">
+    <state width="1750" height="328" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581440621206" />
+    <state width="1750" height="391" key="GridCell.Tab.1.bottom" timestamp="1581108836518">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1580158142268" />
-    <state width="1750" height="391" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1580822253139" />
-    <state width="1750" height="391" key="GridCell.Tab.1.center" timestamp="1580822253138">
+    <state width="1750" height="391" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581108836518" />
+    <state width="1750" height="391" key="GridCell.Tab.1.center" timestamp="1581108836517">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1580158142265" />
-    <state width="1750" height="391" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1580822253138" />
-    <state width="1750" height="391" key="GridCell.Tab.1.left" timestamp="1580822253138">
+    <state width="1750" height="391" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581108836517" />
+    <state width="1750" height="391" key="GridCell.Tab.1.left" timestamp="1581108836517">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1580158142264" />
-    <state width="1750" height="391" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1580822253138" />
-    <state width="1750" height="391" key="GridCell.Tab.1.right" timestamp="1580822253138">
+    <state width="1750" height="391" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581108836517" />
+    <state width="1750" height="391" key="GridCell.Tab.1.right" timestamp="1581108836517">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1580158142266" />
-    <state width="1750" height="391" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1580822253138" />
-    <state x="447" y="318" key="com.intellij.ide.util.TipDialog" timestamp="1580490477280">
-      <screen x="0" y="23" width="1792" height="1017" />
+    <state width="1750" height="391" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581108836517" />
+    <state x="397" y="199" key="SettingsEditor" timestamp="1581370416728">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1581370416728" />
+    <state x="447" y="325" key="com.intellij.ide.util.TipDialog" timestamp="1581370477091">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="319" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1579698904742" />
+    <state x="447" y="325" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1581370477091" />
     <state x="447" y="318" key="com.intellij.ide.util.TipDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1580490477280" />
     <state x="529" y="224" key="extract.method.dialog" timestamp="1580921451578">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1579800737221" />
     <state x="529" y="224" key="extract.method.dialog/0.0.1792.1120@0.0.1792.1120" timestamp="1580921451578" />
-    <state x="470" y="147" width="852" height="825" key="find.popup" timestamp="1580492934900">
+    <state x="470" y="147" width="852" height="825" key="find.popup" timestamp="1581441291142">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="470" y="147" width="852" height="825" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1580492934900" />
+    <state x="470" y="147" width="852" height="825" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1581441291142" />
     <state x="402" y="13" key="refactoring.ChangeSignatureDialog" timestamp="1580155739869">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

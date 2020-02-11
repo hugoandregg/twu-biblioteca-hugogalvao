@@ -6,6 +6,7 @@ import com.twu.biblioteca.entity.product.Product;
 import com.twu.biblioteca.exception.BookIsNotAvailableException;
 import com.twu.biblioteca.exception.NotValidBookToReturn;
 import com.twu.biblioteca.repository.UserRepository;
+import com.twu.biblioteca.service.LibraryService;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,9 +21,9 @@ public class LibraryControllerTest {
 
     private LibraryController libraryController;
 
-    private final Costumer COSTUMER = (Costumer) UserRepository.getUserByLibraryNumber("456-4567");
+    private final Costumer COSTUMER = (Costumer) UserRepository.getInstance().getUserByLibraryNumber("456-4567");
 
-    private final Costumer OTHER_COSTUMER = (Costumer) UserRepository.getUserByLibraryNumber("789-4567");
+    private final Costumer OTHER_COSTUMER = (Costumer) UserRepository.getInstance().getUserByLibraryNumber("789-4567");
 
     private final List<Product> LIST_OF_BOOKS = new ArrayList<Product>() {{
         add(new Book("Harry Potter and the Sorcerer's stone", "J.K. Rowling", 2015, false));
@@ -35,9 +36,11 @@ public class LibraryControllerTest {
         add(new Book("The Handmaid's tale", "Margaret Atwood", 1986, false));
     }};
 
+    private LibraryService libraryService = new LibraryService(LIST_OF_BOOKS);
+
     @Before
     public void setUp() {
-        libraryController = new LibraryController();
+        libraryController = new LibraryController(libraryService);
     }
 
     @Test

@@ -9,13 +9,25 @@ import java.util.List;
 
 public class UserRepository {
 
-    private static List<User> userList = Arrays.asList(
+    private static UserRepository userRepository;
+
+    private List<User> userList = Arrays.asList(
             new Librarian("123-4567", "123"),
             new Costumer("456-4567", "456", "Tom", "tom@email.com", "99456-1234"),
             new Costumer("789-4567", "789", "Jerry", "jerry@email.com", "99789-1234")
     );
 
-    public static User getUserByLibraryNumber(String libraryNumber) {
+    private UserRepository() {
+    }
+
+    public static UserRepository getInstance() {
+        if (userRepository == null) {
+            userRepository = new UserRepository();
+        }
+        return userRepository;
+    }
+
+    public User getUserByLibraryNumber(String libraryNumber) {
         return userList
                 .stream()
                 .filter(user -> user.getLibraryNumber().equals(libraryNumber))

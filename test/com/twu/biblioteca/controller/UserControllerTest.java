@@ -14,9 +14,9 @@ public class UserControllerTest {
 
     private UserController userController = new UserController();
 
-    private final Costumer COSTUMER = (Costumer) UserRepository.getUserByLibraryNumber("456-4567");
+    private final Costumer COSTUMER = (Costumer) UserRepository.getInstance().getUserByLibraryNumber("456-4567");
 
-    private final Librarian LIBRARIAN = (Librarian) UserRepository.getUserByLibraryNumber("123-4567");
+    private final Librarian LIBRARIAN = (Librarian) UserRepository.getInstance().getUserByLibraryNumber("123-4567");
 
     @Test
     public void loginWithCostumer() {

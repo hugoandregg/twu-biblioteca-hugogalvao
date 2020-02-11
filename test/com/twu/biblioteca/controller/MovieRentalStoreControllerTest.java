@@ -6,6 +6,7 @@ import com.twu.biblioteca.entity.product.Product;
 import com.twu.biblioteca.entity.product.RatingEnum;
 import com.twu.biblioteca.exception.MovieIsNotAvailableException;
 import com.twu.biblioteca.repository.UserRepository;
+import com.twu.biblioteca.service.MovieRentalStoreService;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,7 +21,7 @@ public class MovieRentalStoreControllerTest {
 
     private MovieRentalStoreController movieRentalStoreController;
 
-    private final Costumer COSTUMER = (Costumer) UserRepository.getUserByLibraryNumber("456-4567");
+    private final Costumer COSTUMER = (Costumer) UserRepository.getInstance().getUserByLibraryNumber("456-4567");
 
     private List<Product> LIST_OF_MOVIES = new ArrayList<Product>() {{
         add(new Movie("Looking for Dory", "Walt Disney", 2015, false, RatingEnum.EIGHT));
@@ -33,9 +34,11 @@ public class MovieRentalStoreControllerTest {
         add(new Movie("Where is Nemo?", "Walt Disney", 2008, false, RatingEnum.TEN));
     }};
 
+    private MovieRentalStoreService movieRentalStoreService = new MovieRentalStoreService(LIST_OF_MOVIES);
+
     @Before
     public void setUp() {
-        movieRentalStoreController = new MovieRentalStoreController();
+        movieRentalStoreController = new MovieRentalStoreController(movieRentalStoreService);
     }
 
     @Test

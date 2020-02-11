@@ -9,7 +9,7 @@ import com.twu.biblioteca.repository.UserRepository;
 public class UserController {
 
     public User login(String libraryNumber, String password) {
-        User currentUser = UserRepository.getUserByLibraryNumber(libraryNumber);
+        User currentUser = UserRepository.getInstance().getUserByLibraryNumber(libraryNumber);
         if (null != currentUser) {
             if (currentUser.getPassword().equals(password)) {
                 return currentUser;
